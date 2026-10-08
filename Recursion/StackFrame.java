@@ -1,0 +1,21 @@
+package Recursion;
+
+public class StackFrame {
+    public static void method1(){
+        int x= 1;
+        method2();
+        System.out.print(x);
+    }
+    public static void method2(){
+        int x= 2;
+        method3();
+        System.out.print(x);
+    }
+    public static void method3(){
+        int x=3;
+        System.out.print(x);
+    }
+    public static void main(String[]args){
+        method1();
+    }
+}
